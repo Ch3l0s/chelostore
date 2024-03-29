@@ -43,3 +43,68 @@ a:hover{
     }
   }
   
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para la navegación */
+.nav {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: blue;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Estilos para el carrusel */
+.center {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    max-width: 100%;
+    height: auto;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: -25%;
+    }
+    50% {
+        left: -50%;
+    }
+    75% {
+        left: -75%;
+    }
+    100% {
+        left: -100%;
+    }
+}
